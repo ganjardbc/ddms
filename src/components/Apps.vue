@@ -31,13 +31,13 @@
                         Apps
                     </div>
 
-                    <div class="padding-25px">
-                        <div class="card-diagram width width-center ">
-                            <div class="post-middle">
-                                <div class="txt-site txt-20 txt-main txt-bold txt-center">
-                                    120%
+                    <div class="padding-top-25px padding-bottom-25px">
+                        <div class="card-percentage border-50">
+                            <div class="percentage-info">
+                                <div class="percentage-title">
+                                    50%
                                 </div>
-                                <div class="txt-site txt-11 txt-primary txt-center">
+                                <div class="percentage-subtitle">
                                     Percentage
                                 </div>
                             </div>
@@ -60,13 +60,13 @@
                         Apps
                     </div>
 
-                    <div class="padding-25px">
-                        <div class="card-diagram width width-center ">
-                            <div class="post-middle">
-                                <div class="txt-site txt-20 txt-main txt-bold txt-center">
-                                    120%
+                    <div class="padding-top-25px padding-bottom-25px">
+                        <div class="card-percentage border-75">
+                            <div class="percentage-info">
+                                <div class="percentage-title">
+                                    75%
                                 </div>
-                                <div class="txt-site txt-11 txt-primary txt-center">
+                                <div class="percentage-subtitle">
                                     Percentage
                                 </div>
                             </div>

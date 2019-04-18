@@ -25,13 +25,48 @@
     }
 }
 
-.card-diagram {
+.card-percentage {
     position: relative;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
     border-radius: 100%;
-    border: 4px $green solid;
-    margin: 50px 0;
+    &.border-25 {
+        border-top: 4px $green solid;
+        border-right: 4px #fff solid;
+        border-bottom: 4px #fff solid;
+        border-left: 4px #fff solid;
+    }
+    &.border-50 {
+        border-top: 4px $green solid;
+        border-right: 4px $green solid;
+        border-bottom: 4px #fff solid;
+        border-left: 4px #fff solid;
+    }
+    &.border-75 {
+        border-top: 4px $green solid;
+        border-right: 4px $green solid;
+        border-bottom: 4px $green solid;
+        border-left: 4px #fff solid;
+    }
+    &.border-100 {
+        border: 4px $green solid;
+    }
+    .percentage-info {
+        @include  post_center(relative);
+        text-align: center;
+    }
+    .percentage-title {
+        font-size: 18pt;
+        font-weight: 600;
+        color: $txt-84-color;
+        line-height: 1.2;
+    }
+    .percentage-subtitle {
+        font-size: 11pt;
+        color: $txt-54-color;
+        line-height: 1.2;
+    }
 }
 
 table {

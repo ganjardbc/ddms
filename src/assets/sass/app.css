@@ -1508,13 +1508,48 @@
   .card .card-mid {
     position: relative; }
 
-.card-diagram {
+.card-percentage {
   position: relative;
-  width: 110px;
-  height: 110px;
-  border-radius: 100%;
-  border: 4px #2ecc71 solid;
-  margin: 50px 0; }
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 100%; }
+  .card-percentage.border-25 {
+    border-top: 4px #2ecc71 solid;
+    border-right: 4px #fff solid;
+    border-bottom: 4px #fff solid;
+    border-left: 4px #fff solid; }
+  .card-percentage.border-50 {
+    border-top: 4px #2ecc71 solid;
+    border-right: 4px #2ecc71 solid;
+    border-bottom: 4px #fff solid;
+    border-left: 4px #fff solid; }
+  .card-percentage.border-75 {
+    border-top: 4px #2ecc71 solid;
+    border-right: 4px #2ecc71 solid;
+    border-bottom: 4px #2ecc71 solid;
+    border-left: 4px #fff solid; }
+  .card-percentage.border-100 {
+    border: 4px #2ecc71 solid; }
+  .card-percentage .percentage-info {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .card-percentage .percentage-title {
+    font-size: 18pt;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.84);
+    line-height: 1.2; }
+  .card-percentage .percentage-subtitle {
+    font-size: 11pt;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 1.2; }
 
 table {
   position: relative;

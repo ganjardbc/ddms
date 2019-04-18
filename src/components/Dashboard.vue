@@ -92,13 +92,13 @@
                         <div class="padding-15px background-blue">
                             Apps
                         </div>
-                        <div class="padding-25px">
-                            <div class="card-diagram width width-center ">
-                                <div class="post-middle">
-                                    <div class="txt-site txt-20 txt-main txt-bold txt-center">
-                                        120%
+                        <div class="padding-top-25px padding-bottom-25px">
+                            <div class="card-percentage border-25">
+                                <div class="percentage-info">
+                                    <div class="percentage-title">
+                                        25%
                                     </div>
-                                    <div class="txt-site txt-11 txt-primary txt-center">
+                                    <div class="percentage-subtitle">
                                         Percentage
                                     </div>
                                 </div>
