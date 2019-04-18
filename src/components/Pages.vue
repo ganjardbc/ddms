@@ -27,7 +27,7 @@
                             <thead class="background-blue">
                                 <th width="80">No</th>
                                 <th>Content 1</th>
-                                <th>Content 2</th>
+                                <th class="app-desktop">Content 2</th>
                                 <th width="200">Actions</th>
                             </thead>
                             <tbody>
@@ -36,7 +36,7 @@
                                         <strong>{{ index + 1 }}</strong>
                                     </td>
                                     <td>1</td>
-                                    <td>2</td>
+                                    <td class="app-desktop">2</td>
                                     <td>
                                         <button class="btn btn-green btn-small icn" @click="openDataFormEdit()">
                                             <i class="fa fa-lw fa-pencil-alt"></i>

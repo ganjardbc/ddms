@@ -19,6 +19,10 @@
                 </div>
             </div>
 
+            <div class="txt-site txt-12 txt-primary txt-bold margin-left-15px">
+                Content Apps 1
+            </div>
+
             <div class="display-flex-mobile">
 
                 <div class="card" v-for="(item, index) in 3" :key="index">
@@ -42,6 +46,10 @@
 
                 </div>
 
+            </div>
+
+            <div class="txt-site txt-12 txt-primary txt-bold margin-left-15px margin-top-15px">
+                Content Apps 2
             </div>
 
             <div class="display-flex">

@@ -66,7 +66,8 @@
             <div>
 
                 <div class="display-flex-mobile">
-                    <div class="card" v-for="(item, index) in 4" :key="index">
+
+                    <div class="card" v-for="(item, index) in 2" :key="index">
                         <div class="padding-15px background-blue">
                             Statistik
                         </div>
@@ -86,6 +87,25 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card" v-for="(item, index) in 2" :key="index">
+                        <div class="padding-15px background-blue">
+                            Apps
+                        </div>
+                        <div class="padding-25px">
+                            <div class="card-diagram width width-center ">
+                                <div class="post-middle">
+                                    <div class="txt-site txt-20 txt-main txt-bold txt-center">
+                                        120%
+                                    </div>
+                                    <div class="txt-site txt-11 txt-primary txt-center">
+                                        Percentage
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div>
