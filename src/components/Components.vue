@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <div class="app-content">
+        <div class="main-content">
 
             <div>
                 <div>

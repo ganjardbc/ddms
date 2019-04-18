@@ -9,9 +9,9 @@
 			<div class="app-slide">
 
 				<!-- main menu -->
-				<div class="app-fixed background-blue change-scrollbar">
+				<div class="slide-content background-blue change-scrollbar">
 
-					<div class="app-content">
+					<div class="padding-15px">
 
 						<div class="app-space">
 							<div class="grid grid-2x">
@@ -160,12 +160,6 @@
 						
 						</button>
 
-						<!-- <h1 
-							class="txt-site txt-11 txt-main txt-16 app-mobile" 
-							style="">
-							DDMS
-						</h1> -->
-
 						<form action="#" class="app-desktop">
 							<div class="input-group">
 								<input 
@@ -222,10 +216,12 @@
 									<i class="fa fa-lw fa-cog"></i>
 									Pengaturan
 								</li>
-								<li>
-									<i class="fa fa-lw fa-power-off"></i>
-									Logout
-								</li>
+								<router-link to="/">
+									<li>
+										<i class="fa fa-lw fa-power-off"></i>
+										Logout
+									</li>
+								</router-link>
 							</ul>
 						</div>
 
@@ -319,7 +315,7 @@ export default {
 </script>
 
 <style>
-	/*@import url('./assets/icons/fontawesome/css/all.min.css');*/
-	@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+	@import url('./assets/icons/fontawesome/css/all.min.css');
+	/*@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');*/
 	@import url('./assets/sass/app.css');
 </style>

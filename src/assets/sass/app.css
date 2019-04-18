@@ -36,7 +36,8 @@
   background-color: #fafbfe; }
 
 .background-blue {
-  background-color: #394263; }
+  background-color: #394263;
+  color: #fff; }
 
 .border-radius {
   border-radius: 5px;
@@ -1562,6 +1563,15 @@ html::-webkit-scrollbar-corner {
 a {
   text-decoration: none; }
 
+.panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #000;
+  z-index: 100; }
+
 .app {
   position: relative;
   width: 100%;
@@ -1582,14 +1592,14 @@ a {
     @media (max-width: 800px) {
       .app .app-desktop {
         display: none; } }
-  .app .app-side {
+  .app .app-slide {
     position: relative;
     width: 100%;
     height: 100vh;
     grid-column: 1;
     -ms-grid-column: 1; }
     @media (max-width: 800px) {
-      .app .app-side {
+      .app .app-slide {
         position: fixed;
         top: 0;
         left: 0;
@@ -1597,20 +1607,16 @@ a {
         background-color: rgba(57, 66, 99, 0.54);
         grid-column: 1;
         -ms-grid-column: 1; } }
-    .app .app-side.app-slide-mobile {
+    .app .app-slide.app-slide-mobile {
       display: block; }
       @media (max-width: 800px) {
-        .app .app-side.app-slide-mobile {
+        .app .app-slide.app-slide-mobile {
           display: none; } }
-    .app .app-side .app-content {
-      position: relative;
-      width: calc(100% - 30px);
-      padding: 15px; }
-    .app .app-side .app-fixed {
+    .app .app-slide .slide-content {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 300px;
       height: 100vh;
       overflow-y: auto; }
   .app .app-main {
@@ -1623,7 +1629,7 @@ a {
       .app .app-main {
         grid-column: 1;
         -ms-grid-column: 1; } }
-    .app .app-main .app-content {
+    .app .app-main .main-content {
       position: relative;
       width: calc(100% - 30px);
       padding: 15px; }

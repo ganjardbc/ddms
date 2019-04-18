@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <div class="app-content">
+        <div class="main-content">
 
             <div class="padding-15px grid grid-2x">
                 
@@ -61,7 +61,7 @@
 
                 <div class="display-flex">
                     <div class="card" v-for="(item, index) in 4" :key="index">
-                        <div class="padding-15px gradient-blue">
+                        <div class="padding-15px background-blue">
                             Statistik
                         </div>
                         <div class="padding-15px">
@@ -86,7 +86,7 @@
 
                     <div class="display-flex" style="width: 100%;">
                         <table>
-                            <thead class="gradient-blue">
+                            <thead class="background-blue">
                                 <th>No</th>
                                 <th>Content 1</th>
                                 <th>Content 2</th>
@@ -105,7 +105,7 @@
                         </table>
 
                         <!-- <table>
-                            <thead class="gradient-blue">
+                            <thead class="background-blue">
                                 <th>No</th>
                                 <th>Content 1</th>
                                 <th>Content 2</th>
@@ -125,7 +125,7 @@
 
                         
                             <div class="card">
-                                <div class="padding-15px gradient-blue">
+                                <div class="padding-15px background-blue">
                                     Diagram
                                 </div>
                                 <div class="card-mid">
