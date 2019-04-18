@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <div class="app-content">
+        <div class="main-content">
 
             <div class="padding-15px">
                 <div class="grid grid-2x">
@@ -19,7 +19,7 @@
                 </div>
             </div>
 
-            <div class="display-flex">
+            <div class="display-flex-mobile">
 
                 <div class="card" v-for="(item, index) in 3" :key="index">
                     

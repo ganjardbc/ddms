@@ -3,17 +3,17 @@
 
         <div class="main-content">
 
-            <div class="padding-15px grid grid-2x">
+            <div class="padding-15px grid grid-2x grid-mobile-none">
                 
                 <div class="column-1">
-                    <div class="txt-site txt-18 txt-main-color txt-bold post-center">
+                    <div class="txt-site txt-18 txt-main-color txt-bold margin-top-5px margin-bottom-5px">
                         Dashboard
                     </div>
                 </div>
 
-                <div class="column-2 content-right">
+                <div class="column-2 content-right display-flex">
 
-                    <form action="#" style="display: inline-block; vertical-align: top;">
+                    <form action="#" style="width: 100%;">
                         <div class="input-group">
                             <input 
                                 type="date" 
@@ -28,26 +28,32 @@
                         </div>
                     </form>
 
-                    <button class="btn btn-blue btn-qube icn">
-                        <i class="fa fa-lg fa-print"></i>
-                    </button>
+                    <div class="margin-left-5px margin-right-5px">
+                        <button class="btn btn-blue btn-qube icn">
+                            <i class="fa fa-lg fa-print"></i>
+                        </button>
+                    </div>
 
-                    <button class="btn btn-blue btn-qube icn" @click="openMenuMore()">
-                        <i class="fa fa-lg fa-ellipsis-h"></i>
-                    </button>
+                    <div>
+                        <button 
+                            class="btn btn-blue btn-qube icn" 
+                            @click="openMenuMore()">
+                            <i class="fa fa-lg fa-ellipsis-h"></i>
+                        </button>
+                    </div>
 
                     <div
 						style="top: 40px;" 
 						class="app-menu-popup" 
 						v-if="menuMore">
 						<ul>
-							<li>
+							<li @click="openMenuMore()">
 								Opsi 1
 							</li>
-							<li>
+							<li @click="openMenuMore()">
 								Opsi 2
 							</li>
-							<li>
+							<li @click="openMenuMore()">
 								Opsi 3
 							</li>
 						</ul>
@@ -59,7 +65,7 @@
 
             <div>
 
-                <div class="display-flex">
+                <div class="display-flex-mobile">
                     <div class="card" v-for="(item, index) in 4" :key="index">
                         <div class="padding-15px background-blue">
                             Statistik
@@ -84,7 +90,7 @@
 
                 <div>
 
-                    <div class="display-flex" style="width: 100%;">
+                    <div class="display-flex-mobile" style="width: 100%;">
                         <table>
                             <thead class="background-blue">
                                 <th>No</th>

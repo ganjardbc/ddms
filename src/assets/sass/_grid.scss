@@ -87,6 +87,11 @@
 	&.gap-20px {
 		@include grid_gap(20px);
 	}
+	&.grid-mobile-none {
+		@media (max-width: $max-width) {
+			@include grid_none();
+		}
+	}
 	.column-1 {
 		position: relative;
 		width: 100%;

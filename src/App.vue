@@ -6,27 +6,29 @@
 		<div class="app">
 
 			
-			<div class="app-slide">
+			<div :class="slideClass">
 
 				<!-- main menu -->
 				<div class="slide-content background-blue change-scrollbar">
 
-					<div class="padding-15px">
-
-						<div class="app-space">
-							<div class="grid grid-2x">
-								<div class="col-1">
-									<h1 class="txt-site txt-white txt-upp txt-bold post-center">
-										DDMS
-									</h1>
-								</div>
-								<div class="col-2 content-right app-mobile">
-									<button class="btn btn-circle btn-blue">
-										<i class="fa fa-2x fa-times"></i>
-									</button>
-								</div>
+					<div class="padding-top-20px">
+						<div class="grid grid-2x">
+							<div class="col-1">
+								<h1 class="txt-site txt-white txt-upp txt-bold post-center margin-left-10px">
+									DDMS
+								</h1>
+							</div>
+							<div class="col-2 content-right app-mobile">
+								<button 
+									class="btn btn-black btn-circle" 
+									@click="openSlideMenu()">
+									<i class="fa fa-lg fa-times"></i>
+								</button>
 							</div>
 						</div>
+					</div>
+
+					<div class="padding-10px">
 					
 						<div class="app-space">
 							NAVIGATION
@@ -34,7 +36,7 @@
 
 						<ul class="app-menu">
 
-							<li class="content">
+							<li class="content" @click="openSlideMenu()">
 								<router-link to="/dashboard">
 									<div class="list active">
 										<div class="icn">
@@ -64,7 +66,7 @@
 								<!-- submenu -->
 								
 								<ul class="app-menu app-submenu" v-if="menuApps">
-									<li class="content" v-for="(item, index) in 3" :key="index">
+									<li class="content" v-for="(item, index) in 3" :key="index" @click="openSlideMenu()">
 										<router-link to="/apps">
 											<div class="list">
 												<div class="icn"></div>
@@ -95,7 +97,7 @@
 								<!-- submenu -->
 								
 								<ul class="app-menu app-submenu" v-if="menuPages">
-									<li class="content" v-for="(item, index) in 3" :key="index">
+									<li class="content" v-for="(item, index) in 3" :key="index" @click="openSlideMenu()">
 										<router-link to="/pages">
 											<div class="list">
 												<div class="icn"></div>
@@ -118,7 +120,7 @@
 
 						<ul class="app-menu">
 
-							<li class="content" v-for="(item, index) in 8" :key="index">
+							<li class="content" v-for="(item, index) in 8" :key="index" @click="openSlideMenu()">
 								<router-link to="/components">
 									<div class="list">
 										<div class="icn">
@@ -150,95 +152,103 @@
 			<div class="app-main">
 
 				<div class="app-panel">
-					<div class="col-1">
+					<div class="panel-content">
+						<div class="col-1">
 
-						<button 
-							class="btn btn-grey btn-circle app-mobile" 
-							style=""
-							@click="openSlideMenu()">
-							<i class="fa fa-lg fa-bars"></i>
-						
-						</button>
+							<button 
+								class="btn btn-grey app-mobile" 
+								@click="openSlideMenu()">
+								<i class="fa fa-lg fa-bars"></i>
+								<span 
+									class="txt-site txt-14 txt-main-color txt-bold">
+									Menu
+								</span>
+								
+							</button>
 
-						<form action="#" class="app-desktop">
-							<div class="input-group">
-								<input 
-									type="text" 
-									class="txt txt-main-color txt-trans-color" 
-									placeholder="Search .."
-									required>
-								<button 
-									class="btn btn-no-radius btn-blue icn"
-									type="submit">
-									<i class="fa fa-lg fa-search"></i>
-								</button>
-							</div>
-						</form>
+							<form action="#" class="app-desktop">
+								<div class="input-group">
+									<input 
+										type="text" 
+										class="txt txt-main-color txt-trans-color" 
+										placeholder="Search .."
+										required>
+									<button 
+										class="btn btn-no-radius btn-blue icn"
+										type="submit">
+										<i class="fa fa-lg fa-search"></i>
+									</button>
+								</div>
+							</form>
 
-					</div>
-					<div class="col-2">
+						</div>
+						<div class="col-2">
 
-						<button class="btn btn-grey btn-circle">
-							<span class="btn-notif">2</span>
-							<i class="far fa-lg fa-bell"></i>
-						</button>
-						
+							<button class="btn btn-grey btn-circle">
+								<span class="btn-notif">2</span>
+								<i class="far fa-lg fa-bell"></i>
+							</button>
+							
 
-						<div 
-							class="app-small-profile" 
-							style="float: right;"
-							@click="openMenuPopup()">
-							<div class="asp-col-1">
-								<div class="image image-circle image-30px"></div>
-							</div>
-							<div class="asp-col-2">
-								<div class="ttl">
-									<div class="txt-site txt-main txt-12">
-										Ganjar hadiatna
+							<div 
+								class="app-small-profile" 
+								style="float: right;"
+								@click="openMenuPopup()">
+								<div class="asp-col-1">
+									<div class="image image-circle image-30px"></div>
+								</div>
+								<div class="asp-col-2">
+									<div class="ttl">
+										<div class="txt-site txt-main txt-12">
+											Ganjar hadiatna
+										</div>
+										<!-- <div class="txt-site txt-primary txt-9">
+											Founder
+										</div> -->
 									</div>
-									<!-- <div class="txt-site txt-primary txt-9">
-										Founder
-									</div> -->
 								</div>
 							</div>
-						</div>
 
-						<div
-							style="top: 45px;" 
-							class="app-menu-popup" 
-							v-if="menuPopup">
-							<ul>
-								<li>
-									<i class="far fa-lw fa-user"></i>
-									Akun
-								</li>
-								<li class="border-bottom">
-									<i class="fa fa-lw fa-cog"></i>
-									Pengaturan
-								</li>
-								<router-link to="/">
-									<li>
-										<i class="fa fa-lw fa-power-off"></i>
-										Logout
+							<div
+								style="top: 45px;" 
+								class="app-menu-popup" 
+								v-if="menuPopup">
+								<ul>
+									<li @click="openMenuPopup()">
+										<i class="far fa-lw fa-user"></i>
+										Akun
 									</li>
-								</router-link>
-							</ul>
-						</div>
+									<li @click="openMenuPopup()" class="border-bottom">
+										<i class="fa fa-lw fa-cog"></i>
+										Pengaturan
+									</li>
+									<router-link to="/">
+										<li @click="openMenuPopup()">
+											<i class="fa fa-lw fa-power-off"></i>
+											Logout
+										</li>
+									</router-link>
+								</ul>
+							</div>
 
+						</div>
 					</div>
 				</div>
 
 				<router-view/>
 
 				<div class="app-footer">
-					<div class="grid grid-2x">
+					<div class="txt-site txt-11 txt-primary txt-thin">
+						2018 - 2019 @ Bitozen - Themes
+					</div>
+					<!-- <div class="grid grid-2x">
 						<div class="column-1">
 							<div class="txt-site txt-11 txt-primary txt-thin">
 								2018 - 2019 @ Bitozen - Themes
 							</div>
 						</div>
 						<div class="column-2"></div>
-					</div>
+					</div> -->
 				</div>
 
 			</div>
@@ -273,7 +283,7 @@ export default {
 			if (this.slideClass == 'app-slide app-slide-mobile') {
 				this.slideClass = 'app-slide'
 			} else {
-				this.slideClass = 'app-slide-mobile'
+				this.slideClass = 'app-slide app-slide-mobile'
 			}
 		},
 		openMenuPopup () {

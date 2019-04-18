@@ -183,9 +183,13 @@ $hg-form: 45px;
 		background-color: $sek-color;
 		color: $min-color;
 	}
-	&.btn-main5-color {
-		background-color: rgba(0,0,0,0);
-		color: $pos-color;
+	&.btn-black {
+		background-color: rgba(0,0,0,0.1);
+		color: #fff;
+		&:hover {
+			background-color: rgba(0,0,0,0.54);
+			color: #fff;
+		}
 	}
 	&.btn-sekunder {
 		background-color: $sek-color;
@@ -197,13 +201,6 @@ $hg-form: 45px;
 		}
 		&.btn-no-border {
 			border: 0 #fff solid;
-		}
-	}
-	&.btn-black {
-		background-color: $txt-54-color;
-		color: $sek-color;
-		&:hover {
-			background-color: $txt-84-color;
 		}
 	}
 	&.btn-primary {

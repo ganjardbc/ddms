@@ -66,3 +66,11 @@
 	display: flex;
 	flex-wrap: nowrap;
 }
+
+.display-flex-mobile {
+	display: flex;
+	flex-wrap: nowrap;
+	@media (max-width: $max-width) {
+		display: block;
+	}
+}

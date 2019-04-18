@@ -97,6 +97,9 @@ $shadow: 0 5px 20px rgba(154,161,171,.15);
 .background-grey {
     background-color: #fafbfe;
 }
+.background-dark-grey {
+    background-color: #f5f5f5;
+}
 .background-blue {
     background-color: $blue;
     color: #fff;
@@ -107,7 +110,23 @@ $shadow: 0 5px 20px rgba(154,161,171,.15);
     overflow: hidden;
 }
 
-.change-scrollbar {
+// scrollbar
+@mixin transparantScrollBar() {
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,0.14);
+        -webkit-border-radius: 1ex;
+    }
+    &::-webkit-scrollbar-corner {
+        background-color: #fff;
+    }
+}
+
+@mixin transparantScrollBarHover() {
     &::-webkit-scrollbar {
         width: 10px;
         height: 10px;
@@ -126,4 +145,23 @@ $shadow: 0 5px 20px rgba(154,161,171,.15);
             background-color: rgba(0,0,0,0.14);
         }
     }
+}
+
+@mixin greyScrollBar() {
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.1);
+        -webkit-border-radius: 1ex;
+    }
+    &::-webkit-scrollbar-corner {
+        background-color: #fff;
+    }
+}
+
+.change-scrollbar {
+    @include transparantScrollBarHover();
 }

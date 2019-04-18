@@ -93,7 +93,7 @@
 
             <div class="padding-top-20px"></div>
 
-            <div class="width width-600px width-center background-white border-radius">
+            <div class="popup-content background-white border-radius">
 
                 <!-- panel -->
                 <div class="padding-15px gradient-blue grid grid-2x">
@@ -255,7 +255,7 @@
 
             <div class="padding-top-20px"></div>
 
-            <div class="width width-600px width-center background-white border-radius">
+            <div class="popup-content background-white border-radius">
 
                 <!-- panel -->
                 <div class="padding-15px gradient-blue grid grid-2x">

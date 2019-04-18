@@ -1,10 +1,10 @@
 <template>
-    <div class="app-popup background-blue">
-        <div class="app-login padding-25px grid grid-2x">
+    <div class="app-login background-blue">
+        <div class="login-content grid grid-2x grid-mobile-none">
             <div class="col-1">
-                <div class="post-center">
-                    <div class="image image-200px image-circle" style="margin: auto;"></div>
-                </div>
+                <div class="padding-25px"></div>
+                <div class="image image-200px image-circle" style="margin: auto;"></div>
+                <div class="padding-25px"></div>
             </div>
             <div class="col-2">
                 <div class="txt-site txt-14 txt-bold txt-main txt-center margin-top-20px">
