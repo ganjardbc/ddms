@@ -45,7 +45,7 @@
 
                     <div class="display-flex">
                         <table>
-                            <thead class="gradient-blue">
+                            <thead class="background-blue">
                                 <th width="80">No</th>
                                 <th>Content 1</th>
                                 <th class="app-desktop">Content 2</th>

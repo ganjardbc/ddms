@@ -24,7 +24,7 @@
 
                     <div class="display-flex">
                         <table>
-                            <thead class="gradient-blue">
+                            <thead class="background-blue">
                                 <th width="80">No</th>
                                 <th>Content 1</th>
                                 <th>Content 2</th>
@@ -96,14 +96,14 @@
             <div class="popup-content background-white border-radius">
 
                 <!-- panel -->
-                <div class="padding-15px gradient-blue grid grid-2x">
+                <div class="padding-15px background-blue grid grid-2x">
                     <div class="col-1">
                         <div class="txt-site txt-12 txt-bold post-center">
                             Masukan Data
                         </div>
                     </div>
                     <div class="col-2 content-right">
-                        <button class="btn btn-circle gradient-blue" @click="openDataForm()">
+                        <button class="btn btn-circle background-blue" @click="openDataForm()">
                             <i class="fa fa-lg fa-times"></i>
                         </button>
                     </div>
@@ -258,14 +258,14 @@
             <div class="popup-content background-white border-radius">
 
                 <!-- panel -->
-                <div class="padding-15px gradient-blue grid grid-2x">
+                <div class="padding-15px background-blue grid grid-2x">
                     <div class="col-1">
                         <div class="txt-site txt-12 txt-bold post-center">
                             Edit Data
                         </div>
                     </div>
                     <div class="col-2 content-right">
-                        <button class="btn btn-circle gradient-blue" @click="openDataFormEdit()">
+                        <button class="btn btn-circle background-blue" @click="openDataFormEdit()">
                             <i class="fa fa-lg fa-times"></i>
                         </button>
                     </div>

@@ -23,7 +23,7 @@
 
                 <div class="card" v-for="(item, index) in 3" :key="index">
                     
-                    <div class="padding-15px gradient-blue">
+                    <div class="padding-15px background-blue">
                         Apps
                     </div>
 
@@ -48,7 +48,7 @@
 
                 <div class="card" v-for="(item, index) in 2" :key="index">
                     
-                    <div class="padding-15px gradient-blue">
+                    <div class="padding-15px background-blue">
                         Apps
                     </div>
 
