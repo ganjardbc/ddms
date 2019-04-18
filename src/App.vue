@@ -9,7 +9,7 @@
 			<div class="app-slide">
 
 				<!-- main menu -->
-				<div class="app-fixed gradient-blue change-scrollbar">
+				<div class="app-fixed background-blue change-scrollbar">
 
 					<div class="app-content">
 

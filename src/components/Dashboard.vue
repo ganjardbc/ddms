@@ -153,7 +153,7 @@ export default {
         return {
             dataForm: false,
             dataFormEdit: false,
-            menuMore: true,
+            menuMore: false,
         }
     },
     methods: {

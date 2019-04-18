@@ -1,5 +1,5 @@
 <template>
-    <div class="app-popup gradient-blue">
+    <div class="app-popup background-blue">
         <div class="app-login padding-25px grid grid-2x">
             <div class="col-1">
                 <div class="post-center">
@@ -28,7 +28,7 @@
                     <router-link to="/dashboard">
                         <input 
                             type="submit" 
-                            class="btn btn-width-all gradient-blue"> 
+                            class="btn btn-width-all background-blue"> 
                     </router-link>
                 </div>
             </div>
